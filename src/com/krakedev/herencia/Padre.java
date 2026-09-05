@@ -4,10 +4,11 @@ public class Padre {
 	
 	private int defectos;
 	private int virtudes;
+	private double totalAhorrado;
 	
 	@Override
 	public String toString() {
-		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + "]";
+		return "Padre [defectos=" + defectos + ", virtudes=" + virtudes + ", ahorado=" + totalAhorrado +"]";
 	}
 	
 	
@@ -22,6 +23,14 @@ public class Padre {
 		
 	}
 	
+	public double getTotalAhorrado() {
+		return totalAhorrado;
+	}
+
+	public void setTotalAhorrado(double totalAhorrado) {
+		this.totalAhorrado = totalAhorrado;
+	}
+
 	public int getDefectos() {
 		return defectos;
 	}
@@ -44,6 +53,10 @@ public class Padre {
 	
 	public void guardarSecreto() {
 		System.out.println("Esto no se hereda");
+	}
+	
+	public void ahorrar(double monto) {
+		totalAhorrado += monto;
 	}
 
 }
