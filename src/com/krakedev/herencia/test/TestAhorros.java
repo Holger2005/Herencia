@@ -9,15 +9,15 @@ public class TestAhorros {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Padre padre = new Padre(5,2);
+		Padre padre = new Padre(5,2,"Pedro");
 		padre.ahorrar(100);
 		System.out.println(padre);
 		
-		Hija hija = new Hija(5,2);
+		Hija hija = new Hija(1,2,"Maria");
 		hija.ahorrar(100);
 		System.out.println(hija);
 		
-		Hijo hijo = new Hijo(5,2,5);
+		Hijo hijo = new Hijo(2,2,5,"Adrian");
 		hijo.ahorrar(100);
 		System.out.println(hijo);
 

@@ -2,8 +2,8 @@ package com.krakedev.herencia;
 
 public class Hija extends Padre{
 	
-	public Hija(int virtudes, int defectos) {
-		super(virtudes, defectos);
+	public Hija(int virtudes, int defectos, String nombre) {
+		super(virtudes, defectos, nombre);
 	}
 	
 	public void escucharBadBunny() {
@@ -13,7 +13,7 @@ public class Hija extends Padre{
 
 	@Override
 	public String toString() {
-		return "Hija "+"Defecto: " + super.getDefectos() + " Virtudes: "+ super.getVirtudes()+" Ahorrado: " + super.getTotalAhorrado();
+		return "Nombre: " +super.getNombre()+" Hija "+"Defecto: " + super.getDefectos() + " Virtudes: "+ super.getVirtudes()+" Ahorrado: " + super.getTotalAhorrado();
 	}
 
 }
