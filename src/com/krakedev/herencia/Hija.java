@@ -13,7 +13,7 @@ public class Hija extends Padre{
 
 	@Override
 	public String toString() {
-		return "Defecto: " + super.getDefectos() + " Virtudes: "+ super.getVirtudes();
+		return "Hija "+"Defecto: " + super.getDefectos() + " Virtudes: "+ super.getVirtudes()+" Ahorrado: " + super.getTotalAhorrado();
 	}
 
 }
